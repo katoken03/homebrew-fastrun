@@ -11,7 +11,7 @@ class Fastrun < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/katoken03/fastrun/releases/download/v0.1.0/fastrun_Darwin_x86_64.tar.gz"
-      sha256 "383976181e8eb0798e89d034314d5e9c1ab50760605dd8e4d9258584dceb196a"
+      sha256 "945f4cd633b44b2e76c9df5fe545c0d66e63a567e956598f71e7af65db2e7f00"
 
       def install
         system "go", "build", *std_go_args(output: bin/"f")
@@ -19,7 +19,7 @@ class Fastrun < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/katoken03/fastrun/releases/download/v0.1.0/fastrun_Darwin_arm64.tar.gz"
-      sha256 "b2d05d712f82a59656d481fd7386f72b9eabb05d7a202dd2a8289c6fe107070e"
+      sha256 "a4b7ffc8f1a95ce74baa0240ad49bed06305c97d9b1ff74a75b4aac46db34620"
 
       def install
         system "go", "build", *std_go_args(output: bin/"f")
@@ -31,7 +31,7 @@ class Fastrun < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/katoken03/fastrun/releases/download/v0.1.0/fastrun_Linux_x86_64.tar.gz"
-        sha256 "04e614d596f07557bd31578e103e0332561ace10ebb1e7626f9feb6da07e70fd"
+        sha256 "d36b12de8010df522ed41ed3d3e6e31e1f6a0ea53f021294ee4224d3752baa49"
 
         def install
           system "go", "build", *std_go_args(output: bin/"f")
@@ -41,7 +41,7 @@ class Fastrun < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/katoken03/fastrun/releases/download/v0.1.0/fastrun_Linux_arm64.tar.gz"
-        sha256 "d290a61feb1ddc58c128236e8a3f15030c5e34088b9922ffafc0a3b8f0318f9f"
+        sha256 "3243e8c54daca5246a3f446fa9b906f74b63c22651b81cd36aca45ce6124f8d7"
 
         def install
           system "go", "build", *std_go_args(output: bin/"f")
