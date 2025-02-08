@@ -1,10 +1,10 @@
 class Fastrun < Formula
   desc "Command launcher tool for developers"
-  homepage "https://github.com/katopz/fastrun"
+  homepage "https://github.com/katoken03/fastrun"
   
-  url "https://github.com/katopz/fastrun/archive/v0.1.0.tar.gz"
+  url "https://github.com/katoken03/fastrun/archive/v0.1.0.tar.gz"
   version "0.1.0"
-  sha256 "後でリリースファイルから計算します"
+  sha256 "実際のshasum値が入ります"
   license "MIT"
 
   depends_on "go" => :build
