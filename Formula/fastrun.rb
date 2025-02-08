@@ -4,7 +4,7 @@ class Fastrun < Formula
   
   url "https://github.com/katoken03/fastrun/archive/v0.1.0.tar.gz"
   version "0.1.0"
-  sha256 "実際のshasum値が入ります"
+  sha256 "6dd97bb1c52514e6cc28be2172a647be0720ff27f127a27e3a61a08ed34700b6"
   license "MIT"
 
   depends_on "go" => :build
