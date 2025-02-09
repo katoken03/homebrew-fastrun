@@ -16,7 +16,7 @@ class Fastrun < Formula
 
   def caveats
     <<~EOS
-      fastrun has been installed as the command 'f'.
+      ✅ fastrun has been installed as the command 'f'.
       To use it:
       1. Move to a directory with package.json or Makefile
       2. Just type 'f' and press Enter
