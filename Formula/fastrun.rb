@@ -14,6 +14,16 @@ class Fastrun < Formula
     system "go", "build", *std_go_args(output: bin/"f")
   end
 
+  def caveats
+    <<~EOS
+      fastrun has been installed as the command 'f'.
+      To use it:
+      1. Move to a directory with package.json or Makefile
+      2. Just type 'f' and press Enter
+         f [Enter]
+    EOS
+  end
+
   test do
     assert_match "fastrun version", shell_output("#{bin}/f --version")
   end
