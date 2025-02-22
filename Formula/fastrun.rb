@@ -2,9 +2,9 @@ class Fastrun < Formula
   desc "Fast command launcher with fuzzy search for npm scripts and make targets"
   homepage "https://github.com/katoken03/fastrun"
   
-  url "https://github.com/katoken03/fastrun/archive/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "511dc2ad82534057d5b535bd0c806545faceef6385cd479ece573a173af30601"
+  url "https://github.com/katoken03/fastrun/archive/v0.2.1.tar.gz"
+  version "0.2.1"
+  sha256 "d4da0c76180a4877b9d939dc92f63f2770ab1785a16b0d688f2b9ace087a7d8a"
   license "MIT"
 
   depends_on "go" => :build
