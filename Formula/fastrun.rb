@@ -11,7 +11,7 @@ class Fastrun < Formula
   on_macos do
     on_intel do
       url "https://github.com/katoken03/fastrun/releases/download/v1.0.2/fastrun_Darwin_x86_64.tar.gz"
-      sha256 "ba9423d2f927dbb04d1718315f3ba5843bc08da6e1383c591c8475bc8e30a90d"
+      sha256 "b1a80f3a1b7a9c920a4ed77724ac405ca0ccbb82faf0a656bcae9b04edda1d9a"
 
       def install
         bin.install "f"
@@ -19,7 +19,7 @@ class Fastrun < Formula
     end
     on_arm do
       url "https://github.com/katoken03/fastrun/releases/download/v1.0.2/fastrun_Darwin_arm64.tar.gz"
-      sha256 "7260fbf7569e3f83ca64226acfe432234a038af33ba5774dbe9e1ef1b289cbbf"
+      sha256 "cdf2e27f830535399ff73cd45cd616350753572bd0dab92ca1623a351e458388"
 
       def install
         bin.install "f"
@@ -31,7 +31,7 @@ class Fastrun < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/katoken03/fastrun/releases/download/v1.0.2/fastrun_Linux_x86_64.tar.gz"
-        sha256 "d9e1962ad079da6b0e71c3ea411e80c135ff72426ea11f72f4421512b5939fa3"
+        sha256 "e6abe8ce07e8b415d237ad4ff2ce5e37f021dbfccb593d926c87a7ce1a1da010"
 
         def install
           bin.install "f"
@@ -41,7 +41,7 @@ class Fastrun < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/katoken03/fastrun/releases/download/v1.0.2/fastrun_Linux_arm64.tar.gz"
-        sha256 "f85ad7ffb1f2f6b62f1b9823b3f148b8d7ad5929eb964f60748c76da6906593d"
+        sha256 "1399aef20e8d0ae5ee77992e514afc1911d986b1230007b1296837576ea8c570"
 
         def install
           bin.install "f"
