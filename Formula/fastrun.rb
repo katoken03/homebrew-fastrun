@@ -5,21 +5,21 @@
 class Fastrun < Formula
   desc "Command launcher tool for developers"
   homepage "https://github.com/katoken03/fastrun"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/katoken03/fastrun/releases/download/v1.1.0/fastrun_Darwin_x86_64.tar.gz"
-      sha256 "556fe502216fc403d0d942036ec8a7a5183ce9057f552ac57c2cc8b6b453f96e"
+      url "https://github.com/katoken03/fastrun/releases/download/v1.1.1/fastrun_Darwin_x86_64.tar.gz"
+      sha256 "60306e4e8af32f7895a5c36802951f48a9a6fe6e1f2fe08bbac428d2a2d2c70d"
 
       def install
         bin.install "f"
       end
     end
     on_arm do
-      url "https://github.com/katoken03/fastrun/releases/download/v1.1.0/fastrun_Darwin_arm64.tar.gz"
-      sha256 "bddf37a2e0b71465ca30745ea62b6092f3cdfaa54eabb61666b7c4e03b2c0629"
+      url "https://github.com/katoken03/fastrun/releases/download/v1.1.1/fastrun_Darwin_arm64.tar.gz"
+      sha256 "34f3f5c2ced31842385275e8d91e636fdbc862f03de421dfe720d4c1b0920bd2"
 
       def install
         bin.install "f"
@@ -30,8 +30,8 @@ class Fastrun < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/katoken03/fastrun/releases/download/v1.1.0/fastrun_Linux_x86_64.tar.gz"
-        sha256 "9d2be6155ffef286086010b9510dc609c801d812920c1259dc73775ab0794629"
+        url "https://github.com/katoken03/fastrun/releases/download/v1.1.1/fastrun_Linux_x86_64.tar.gz"
+        sha256 "9876e745ffa7b208c15edd2afb8ec9b613e5aae62ad8d332e1c5f8dc69dddc3f"
 
         def install
           bin.install "f"
@@ -40,8 +40,8 @@ class Fastrun < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/katoken03/fastrun/releases/download/v1.1.0/fastrun_Linux_arm64.tar.gz"
-        sha256 "ba9e04dfeca25ad9ec992e3247132c5ca42ae1051b965f0f0c7f37725ff1d484"
+        url "https://github.com/katoken03/fastrun/releases/download/v1.1.1/fastrun_Linux_arm64.tar.gz"
+        sha256 "c48089bb28c39297ff98871fccf712a6e02b3bd4c6b1960f5adc214f01493c68"
 
         def install
           bin.install "f"
