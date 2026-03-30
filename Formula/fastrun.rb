@@ -5,21 +5,23 @@
 class Fastrun < Formula
   desc "Command launcher tool for developers"
   homepage "https://github.com/katoken03/fastrun"
-  version "1.1.2"
+  version "1.1.3"
   license "MIT"
+
+  depends_on "fzf"
 
   on_macos do
     on_intel do
-      url "https://github.com/katoken03/fastrun/releases/download/v1.1.2/fastrun_Darwin_x86_64.tar.gz"
-      sha256 "11208d7c466552578901f16b34e1c2428c7bc3aa1e451b141edebc3607603366"
+      url "https://github.com/katoken03/fastrun/releases/download/v1.1.3/fastrun_Darwin_x86_64.tar.gz"
+      sha256 "46bdebadcf62f41f64b9eefc7f23c49b4ed83a9bd5573767f1e11ae677c2e399"
 
       def install
         bin.install "f"
       end
     end
     on_arm do
-      url "https://github.com/katoken03/fastrun/releases/download/v1.1.2/fastrun_Darwin_arm64.tar.gz"
-      sha256 "bee327060fe42da42256d5404968860024d132e2f11616a3e404d65b5a9019ac"
+      url "https://github.com/katoken03/fastrun/releases/download/v1.1.3/fastrun_Darwin_arm64.tar.gz"
+      sha256 "0b284279af360a19fb1838a4b6675ce554419f17b6abe516cf74a5d1e80367a3"
 
       def install
         bin.install "f"
@@ -30,8 +32,8 @@ class Fastrun < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/katoken03/fastrun/releases/download/v1.1.2/fastrun_Linux_x86_64.tar.gz"
-        sha256 "caa26ab5a93bcfc653504ebe2789d3b9cf4d88ee138ada3eeab308e2e7c3ca88"
+        url "https://github.com/katoken03/fastrun/releases/download/v1.1.3/fastrun_Linux_x86_64.tar.gz"
+        sha256 "173820513cf986d1ae08ee790e412b21f35209364c99e6c957d578b03776148c"
 
         def install
           bin.install "f"
@@ -40,8 +42,8 @@ class Fastrun < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/katoken03/fastrun/releases/download/v1.1.2/fastrun_Linux_arm64.tar.gz"
-        sha256 "9cbe129b56dd5a63bc5b61a1e6351af42f5e25470786be7cedc6cd6289d65729"
+        url "https://github.com/katoken03/fastrun/releases/download/v1.1.3/fastrun_Linux_arm64.tar.gz"
+        sha256 "f60cf24113d0d0ac1d92394465613da1bf02ae3eece7fde27714f1b011208468"
 
         def install
           bin.install "f"
